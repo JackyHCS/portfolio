@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CS Portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+      emailjs.init({
+        publicKey: "NahyiIqnNDxQ3m_hC",
+      });
+    })();
+    </script>
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header id="header">
+      <div class="container">
+        <a href="#" class="logo">
+          <i class="fa-solid fa-code"></i>
+          <span>Dev<span class="accent">Portfolio</span></span>
+        </a>
+
+        <nav id="navbar">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#tools">Tools</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="social-links">
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="mailto:your-email@example.com">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </div>
+
+        <button id="mobile-toggle">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu">
+      <nav>
+        <a href="#about" class="mobile-link">About</a>
+        <a href="#tools" class="mobile-link">Tools</a>
+        <a href="#experience" class="mobile-link">Experience</a>
+        <a href="#contact" class="mobile-link">Contact</a>
+      </nav>
+      <div class="mobile-social">
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a href="mailto:your-email@example.com">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="about" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1>Hi, I'm <span class="accent">Alex Johnson</span></h1>
+            <h2>Computer Science Student</h2>
+            <p>
+              Currently studying at the University of Texas at Dallas, and practicing full-stack development. 
+            </p>
+            <div class="hero-buttons">
+              <a href="#contact" class="btn primary">Contact Me</a>
+              <a href="#" class="btn secondary">Download CV</a>
+            </div>
+          </div>
+          <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Programming on a laptop">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tools Section -->
+    <section id="tools" class="tools">
+      <div class="container">
+        <h2 class="section-title">My Toolbox</h2>
+        <p class="section-subtitle">Technologies I work with</p>
+        
+        <div class="tools-grid">
+          <div class="tool-card">
+            <div class="tool-icon">
+              <i class="fa-brands fa-html5"></i>
+            </div>
+            <h3>HTML5</h3>
+            <p>Creating structured, semantic markup for modern web applications</p>
+          </div>
+          
+          <div class="tool-card">
+            <div class="tool-icon">
+              <i class="fa-brands fa-css3-alt"></i>
+            </div>
+            <h3>CSS3</h3>
+            <p>Designing responsive and interactive user interfaces</p>
+          </div>
+          
+          <div class="tool-card">
+            <div class="tool-icon">
+              <i class="fa-brands fa-js"></i>
+            </div>
+            <h3>JavaScript</h3>
+            <p>Building dynamic and interactive front-end experiences</p>
+          </div>
+          
+          <div class="tool-card">
+            <div class="tool-icon">
+              <i class="fa-brands fa-react"></i>
+            </div>
+            <h3>React</h3>
+            <p>Creating modular and reusable component-based UIs</p>
+          </div>
+          
+          <div class="tool-card">
+            <div class="tool-icon">
+              <i class="fa-brands fa-node-js"></i>
+            </div>
+            <h3>Node.js</h3>
+            <p>Developing scalable server-side applications</p>
+          </div>
+          
+          <div class="tool-card">
+            <div class="tool-icon">
+              <i class="fa-solid fa-database"></i>
+            </div>
+            <h3>SQL</h3>
+            <p>Managing and querying relational databases</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2 class="section-title">My Projects</h2>
+        <p class="section-subtitle">Recent works and contributions</p>
+        
+        <div class="project-grid">
+          <div class="project-card">
+            <img src="https://via.placeholder.com/300" alt="Project 1">
+            <h3>Portfolio Website</h3>
+            <p>A personal portfolio website showcasing my skills and projects.</p>
+            <a href="#" class="btn primary">View Project</a>
+          </div>
+          
+          <div class="project-card">
+            <img src="https://via.placeholder.com/300" alt="Project 2">
+            <h3>Task Manager App</h3>
+            <p>A web application to manage tasks with real-time updates.</p>
+            <a href="#" class="btn primary">View Project</a>
+          </div>
+          
+          <div class="project-card">
+            <img src="https://via.placeholder.com/300" alt="Project 3">
+            <h3>E-commerce Platform</h3>
+            <p>An online store built with React and Node.js, featuring product listings and a shopping cart.</p>
+            <a href="#" class="btn primary">View Project</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+      <div class="container">
+        <h2 class="section-title">Experience & Education</h2>
+        <p class="section-subtitle">My journey so far</p>
+        
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2023 - Present</div>
+            <div class="timeline-content">
+              <h3>Frontend Developer Intern</h3>
+              <h4>Tech Innovations Inc.</h4>
+              <p>Working on web applications using modern technologies. Collaborating with the design team to implement responsive interfaces.</p>
+              <div class="tags">
+                <span class="tag">React</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">CSS</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2022 - 2023</div>
+            <div class="timeline-content">
+              <h3>Research Assistant</h3>
+              <h4>University Computer Science Department</h4>
+              <p>Assisted in research on machine learning algorithms for natural language processing. Implemented data collection and analysis tools.</p>
+              <div class="tags">
+                <span class="tag">Python</span>
+                <span class="tag">ML</span>
+                <span class="tag">Data Analysis</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2021 - Present</div>
+            <div class="timeline-content">
+              <h3>B.S. Computer Science</h3>
+              <h4>University of Texas at Dallas</h4>
+              <p>Focusing on artificial intelligence and software engineering. Member of the Computer Science Students Association.</p>
+              <div class="tags">
+                <span class="tag">Algorithms</span>
+                <span class="tag">AI</span>
+                <span class="tag">Software Engineering</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">Have a question or want to work together?</p>
+        
+        <div class="contact-container">
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fa-solid fa-envelope"></i>
+              <div>
+                <h3>Email</h3>
+                <p>huynhjacky79@gmail.com</p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <h3>Location</h3>
+                <p>Dallas, TX</p>
+              </div>
+            </div>
+            
+            <div class="social-links-lg">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </div>
+          </div>
+          
+          <section id="contact-form" class="contact-form">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Enter name"required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Enter email" required>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Enter Subject" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button class="btn primary" onclick="sendMail()">Submit</button>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <i class="fa-solid fa-code"></i>
+            <span>Dev<span class="accent">Portfolio</span></span>
+          </div>
+          
+          <div class="footer-copyright">
+            <p>&copy; <span id="year"></span> Jacky Huynh. All rights reserved.</p>
+          </div>
+          
+          <div class="footer-links">
+            <a href="#about">About</a>
+            <a href="#tools">Tools</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
