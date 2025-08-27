@@ -84,7 +84,6 @@ function sendMail() {
 
   })
   .catch(err=>console.log(err));
-
 }
 
 // Fade-in animations for Sections
@@ -92,12 +91,14 @@ const fadeElements = document.querySelectorAll('.section-title, .section-subtitl
 
 const fadeObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
-    if (entry.isIntersecting) {
+    if (entry.isIntersecting) 
+    {
       entry.target.classList.add('fade-in');
       fadeObserver.unobserve(entry.target);
     }
   });
-}, {
+}, 
+{
   threshold: 0.1
 });
 
