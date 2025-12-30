@@ -2,6 +2,7 @@
 // DOM elements
 const header = document.getElementById('header');
 const mobileToggle = document.getElementById('mobile-toggle');
+const mobileBackdrop = document.getElementById('mobile-backdrop');
 const mobileMenu = document.getElementById('mobile-menu');
 const mobileLinks = document.querySelectorAll('.mobile-link');
 const scrollTopBtn = document.getElementById('scroll-top');
@@ -14,15 +15,18 @@ yearSpan.textContent = new Date().getFullYear();
 // Toggle mobile menu
 mobileToggle.addEventListener('click', () => {
   mobileMenu.classList.toggle('active');
+  mobileBackdrop.classList.toggle('active'); // Add this line
   
   // Toggle between menu and close icon
   const icon = mobileToggle.querySelector('i');
   if (mobileMenu.classList.contains('active')) {
     icon.classList.remove('fa-bars');
     icon.classList.add('fa-xmark');
+    document.body.style.overflow = 'hidden'; // Prevent scrolling when menu is open
   } else {
     icon.classList.remove('fa-xmark');
     icon.classList.add('fa-bars');
+    document.body.style.overflow = ''; // Restore scrolling
   }
 });
 
@@ -30,11 +34,24 @@ mobileToggle.addEventListener('click', () => {
 mobileLinks.forEach(link => {
   link.addEventListener('click', () => {
     mobileMenu.classList.remove('active');
+    mobileBackdrop.classList.remove('active'); // Add this line
+    document.body.style.overflow = ''; // Add this line
     
     const icon = mobileToggle.querySelector('i');
     icon.classList.remove('fa-xmark');
     icon.classList.add('fa-bars');
   });
+});
+
+// Close menu when clicking on backdrop
+mobileBackdrop.addEventListener('click', () => {
+  mobileMenu.classList.remove('active');
+  mobileBackdrop.classList.remove('active');
+  document.body.style.overflow = '';
+  
+  const icon = mobileToggle.querySelector('i');
+  icon.classList.remove('fa-xmark');
+  icon.classList.add('fa-bars');
 });
 
 // Header scroll effect
