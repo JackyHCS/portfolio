@@ -339,13 +339,13 @@ ul, ol {
 
 .tools-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 1.25rem;
 }
 
 .tool-card {
   background-color: var(--card);
-  padding: 2rem;
+  padding: 1.35rem;
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   transition: var(--transition);
@@ -358,18 +358,19 @@ ul, ol {
 }
 
 .tool-icon {
-  font-size: 3rem;
+  font-size: 2.25rem;
   color: var(--accent);
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.9rem;
 }
 
 .tool-card h3 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  margin-bottom: 0.65rem;
 }
 
 .tool-card p {
   color: var(--muted);
+  font-size: 0.95rem;
 }
 
 /* Projects Section */
